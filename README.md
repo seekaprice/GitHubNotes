@@ -1,6 +1,9 @@
 # GitHubNotes
 A quick reference for using GitHub
 
+
+## Repo from existing code or from scratch
+
 * create local folder for project and cd into it
 * add local source code if necessary
 * run command git init to initialize blank local repo
