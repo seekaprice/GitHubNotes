@@ -1,7 +1,21 @@
 # GitHubNotes
 A quick reference for using GitHub
 
+## Get remote originl url
+```console
+git config --get remote.origin.url
+```
 
+## List All Remotes
+ ```console
+ git remote -v
+ ```
+
+## Set new RemoteUrl
+```
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+```
+ 
 ## Repo from existing code or from scratch
 
 * create local folder for project and cd into it
