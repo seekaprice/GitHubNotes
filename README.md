@@ -1,7 +1,33 @@
 # GitHubNotes
 A quick reference for using GitHub
 
-## Get remote originl url
+## Revert local changes 
+from latest commit, but haven't pushed commit yet
+```console
+git reset --hard HEAD
+```
+discard any new files or directories that you may have added, 
+in case you want to throw those away. 
+If you haven't added any, you don't have to run this.
+```console
+git clean -f
+```
+
+pull from repo
+```console
+git pull
+```
+
+#### if commit has been pushed, then you need to get the log and revert
+```console
+git log
+```
+this will give you your latest push commit hash key. You will need the hash key to revert
+```console
+git reset --hard <your commit hash key>
+```
+
+## Get remote origin url
 ```console
 git config --get remote.origin.url
 ```
@@ -56,7 +82,7 @@ git commit -m "merged conflicts"
 ```console
 git push --set-upstream origin master
 ```
-* create a local branch and swith to it
+## create a local branch and swith to it
 ```console
 git branch development
 git checkout development
